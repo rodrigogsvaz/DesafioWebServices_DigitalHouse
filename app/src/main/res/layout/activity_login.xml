@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DarkBlue"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/background_round_red"
+        android:orientation="vertical"
+        android:radius="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to the Marvel HQ's"
+            android:textColor="@color/White"
+            android:textSize="25sp"
+            android:paddingVertical="30dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:radius="110dp"
+            android:background="@drawable/background_round_white">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.163"
+                tools:layout_editor_absoluteX="16dp">
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:text="Email"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/Red"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="18dp"
+                    android:backgroundTint="@color/Gray"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/Blue" />
+
+                <TextView
+                    android:id="@+id/tvPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:text="Password"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/Red"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="18dp"
+                    android:backgroundTint="@color/Gray"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:textColor="@color/Blue" />
+
+                <CheckBox
+                    android:id="@+id/saveLoginCheckBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="18dp"
+                    android:text="Remember"
+                    android:textColor="@color/DarkGray"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/bLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="18dp"
+                    android:layout_marginTop="56dp"
+                    android:backgroundTint="@color/Red"
+                    android:text="LOG IN"
+                    android:textColor="@color/White"
+                    android:textSize="18sp"/>
+
+                <Button
+                    android:id="@+id/bCreateAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="18dp"
+                    android:text="Create Account"
+                    style="@style/Button"
+                    android:backgroundTint="@color/White"
+                    android:stateListAnimator="@null"
+                    android:textColor="@color/DarkGray"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

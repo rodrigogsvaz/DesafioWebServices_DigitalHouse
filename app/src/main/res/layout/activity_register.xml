@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DarkBlue"
+    tools:context=".RegisterActivity">
+
+    <include
+        android:id="@+id/toolBarRegister"
+        layout="@layout/toolbar_register"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/background_round_red"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:radius="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.752">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="30dp"
+            android:textColor="@color/White"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_round_white"
+            android:orientation="vertical"
+            android:radius="110dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvNameRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:text="Name"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/Red"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etNameRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="18dp"
+                    android:backgroundTint="@color/Gray"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/Blue" />
+
+                <TextView
+                    android:id="@+id/tvEmailRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:text="Email"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/Red"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etEmailRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="18dp"
+                    android:backgroundTint="@color/Gray"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:textColor="@color/Blue" />
+
+                <TextView
+                    android:id="@+id/tvPasswordRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:text="Password"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/Red"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etPasswordRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="18dp"
+                    android:backgroundTint="@color/Gray"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:textColor="@color/Blue" />
+
+
+                <Button
+                    android:id="@+id/bSave"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="18dp"
+                    android:layout_marginTop="56dp"
+                    android:backgroundTint="@color/Red"
+                    android:text="SAVE"
+                    android:textColor="@color/White"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
