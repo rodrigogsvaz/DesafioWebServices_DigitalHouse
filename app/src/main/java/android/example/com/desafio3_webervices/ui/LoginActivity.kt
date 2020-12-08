@@ -1,10 +1,9 @@
-package android.example.com.desafio3_webervices
+package android.example.com.desafio3_webervices.ui
 
 import android.content.Intent
+import android.example.com.desafio3_webervices.R
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.core.content.ContextCompat
-import androidx.core.content.ContextCompat.startActivity
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
